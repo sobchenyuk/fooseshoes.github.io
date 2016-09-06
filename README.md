@@ -2,4 +2,4 @@
 
 Шаблон не адаптивный.
 
-(ДЕМО)[uchenyk.porter.in.ua] 
+[ДЕМО](uchenyk.porter.in.ua)
