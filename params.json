@@ -1,0 +1,9 @@
+{
+  "name": "fooseshoes",
+  "version": "1",
+  "author": "Andrey Sobchenyuk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sobchenyuk/fooseshoes.github.io"
+  }
+}
