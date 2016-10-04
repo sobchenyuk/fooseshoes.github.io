@@ -108,7 +108,7 @@ ol, ul {
 
 /* --------------------------MENU*/
 .mains {
-  height: 66px;
+  height: 71px;
 }
 /*menu right*/
 .menu {
@@ -204,23 +204,35 @@ span.order {
   background: #57C5A0;
 }
 /* --------------------------TOP*/
-.banner {
-  background-image: url('../img/img.png');
-  height: 460px;
-  background-size: 122% 100%;
-  background-position: 54%;
-}
-@media screen and (min-width: 1700px) {
-  .banner {
-    background-image: url('../img/img.png');
-    height: 460px;
-    background-size: 133em 100%;
-    background-position: 54%;
-    background-repeat: no-repeat;
-    background-color: #f0ece9;
-  }
-}
 
+.slider {
+  background: #2e2e2e;
+  padding-bottom: 8%;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+.ei-slider-thumbs li a span.active {
+  color: #ffffff;
+}
+.ei-slider-thumbs li a span {
+  padding-top: 30px;
+  font-size: 1.2em;
+  display: inline-block;
+  color: #999999;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.ei-slider-thumbs li a p {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-family: "Aller";
+  color: rgba(173, 173, 173, 0.502);
+  line-height: 2.083;
+  letter-spacing: 1.6px;
+  -webkit-text-stroke: 1px;
+}
 /* left top */
 .Item__Details {
   width: 389px;
@@ -441,7 +453,6 @@ span.under__ceroi__fourth {
   background-color: #242424;
   height: 228px;
   padding-top: 24px;
-  margin-top: 92px;
 }
 .image {
   margin-left: -12px;
