@@ -538,12 +538,16 @@
 <script type="text/javascript" src="//vk.com/js/api/openapi.js?130"></script>
 
 <!-- VK Widget -->
+
 <div id="vk_community_messages"></div>
 <script type="text/javascript">
-    VK.Widgets.CommunityMessages("vk_community_messages", 116827570, {shown: "1"});
+    VK.Widgets.CommunityMessages("vk_community_messages", {
+        shown: 1,
+        onCanNotWrite: function() {
+            VK.Widgets.CommunityMessages.destroy("vk_community_messages");
+        },
+    }, 116827570);
 </script>
-
-
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
