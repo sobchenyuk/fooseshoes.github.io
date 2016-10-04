@@ -233,6 +233,47 @@ span.order {
   letter-spacing: 1.6px;
   -webkit-text-stroke: 1px;
 }
+.ei-title h3.btns {
+  font-size: 15px;
+  font-family: "Aller";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background: #57C5A0;
+  padding: 24px 12px 0px 9px;
+  height: 67px;
+  position: relative;
+  left: 4px;
+  top: 10px;
+  width: 76px;
+}
+
+.ei-title h3.ei-title_h2 {
+  font-size: 40px;
+  font-family: "Aller";
+  color: rgb(36, 36, 36);
+  line-height: 1;
+  text-align: left;
+  width: 340px;
+  letter-spacing: 3.3px;
+  margin-left: 3px;
+  margin-bottom: 9px;
+  padding: 0;
+}
+.ei-title h3.active {
+  font-size: 20px;
+  font-family: "Aller";
+  color: rgb(36, 36, 36);
+  line-height: 1.25;
+  text-align: left;
+  letter-spacing: 2px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+div.ei-title {
+  position: absolute;
+  right: 5%;
+  top: 4%;
+}
 /* left top */
 .Item__Details {
   width: 389px;
@@ -270,8 +311,12 @@ span.order {
 }
 .Desc__Zagolovok__int {
   font-size: 40px !important;
-  top: 4px;
-  left: -17px;
+  top: 43%;
+  left: 18%;
+  position: absolute;
+}
+.Desc__Zagolovok__coll {
+  margin-left: 6%;
 }
 .Desc__Zagolovok .Desc__Zagolovok__coll {
   position: absolute;
@@ -302,12 +347,18 @@ span.order {
 
 .Action__Menu {
   position: relative;
-  top: 6px;
-  left: -36px;
+  top: -22px;
+  right: 58%;
 }
 .Action__Menu__item {
   list-style-type: none;
   display: inline-block;
+}
+.Action__Menu__link:hover {
+  text-decoration: none;
+}
+.Action__Menu__link:focus {
+  text-decoration: none;
 }
 .Action__Menu__link i {
   width: 32px;
