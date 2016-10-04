@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4530c72c-39c2-4690-ab24-ae036e4be421" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/fooseshoes.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_css/master.css" afterPath="$PROJECT_DIR$/_css/master.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/stylesheet.css" afterPath="$PROJECT_DIR$/stylesheets/stylesheet.css" />
     </list>
     <list id="10b25478-6b85-41b2-bb75-380404da6363" name="New changelist" comment="04.10.2016" />
     <ignored path="fooseshoes.iws" />
@@ -33,21 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="451" column="25" selection-start-line="451" selection-start-column="25" selection-end-line="451" selection-end-column="25" />
+            <state relative-caret-position="561">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_css/master.css">
+      <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="752" column="23" selection-start-line="752" selection-start-column="23" selection-end-line="752" selection-end-column="23" />
+            <state relative-caret-position="0">
+              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -75,8 +67,9 @@
         <option value="$PROJECT_DIR$/_parts/counter-footer.php" />
         <option value="$PROJECT_DIR$/_parts/counter-header.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_css/master.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/stylesheets/stylesheet.css" />
       </list>
     </option>
   </component>
@@ -227,7 +220,7 @@
       <workItem from="1472807926007" duration="5321000" />
       <workItem from="1472818436651" duration="5569000" />
       <workItem from="1475570862540" duration="2640000" />
-      <workItem from="1475573783127" duration="777000" />
+      <workItem from="1475573783127" duration="1439000" />
     </task>
     <task id="LOCAL-00001" summary="Новое изменение 04,10,2016">
       <created>1475571467737</created>
@@ -250,11 +243,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475571826004</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Новое изменение 04,10,2016">
+      <created>1475574993651</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1475574993651</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66139000" />
+    <option name="totallyTimeSpent" value="66801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -395,25 +395,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="228" column="14" selection-start-line="228" selection-start-column="14" selection-end-line="228" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_css/master.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="752" column="23" selection-start-line="752" selection-start-column="23" selection-end-line="752" selection-end-column="23" />
+        <state relative-caret-position="273">
+          <caret line="770" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="451" column="25" selection-start-line="451" selection-start-column="25" selection-end-line="451" selection-end-column="25" />
+        <state relative-caret-position="561">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>

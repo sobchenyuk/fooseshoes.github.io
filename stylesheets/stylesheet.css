@@ -1,3 +1,9 @@
+ol, ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
 @font-face {
   font-family: Aller;
   src: url(../_fonts/aller.light.ttf);
@@ -757,6 +763,10 @@ footer img {
   float: left;
   width: 29.3333%;
   margin: 0px 14px 10px 0px;
+}
+ul li.footer___header_item {
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 .footer___header_link {
   display: block;
