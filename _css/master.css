@@ -124,7 +124,6 @@
 
 .menu__item a:hover {
     text-decoration: none;
-
     color: rgb(87, 197, 160);
  }
 .menu__item .active__link {
