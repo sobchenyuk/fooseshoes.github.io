@@ -751,9 +751,18 @@ footer {
 footer img {
     top: 7px;
     position: relative;
-    width: 292px;
-    height: 122px;
+    width: 100%;
 }
+.footer___header_item {
+    float: left;
+    width: 29.3333%;
+    margin: 0px 14px 10px 0px;
+}
+.footer___header_link {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
 /* --------------------------FOOTER1*/
 .footer__duttom1 {
     padding-top: 38px;

@@ -9,7 +9,7 @@
     <meta name="twitter:site" content="">
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content=""
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site description">
@@ -24,11 +24,7 @@
     <meta itemprop="url" content="">
     <meta itemprop="name" content="fooseshoes">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-
-    <link rel="stylesheet" href="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_css/master.css">
+    <?php include '_parts/counter-header.php' ?>
 
 </head>
 <body>
@@ -40,7 +36,7 @@
             <div class="navbar-header">
 
                 <a class="navbar-brand" href="#">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/logo.png" class="logos" alt="">
+                    <img src="_img/logo.png" class="logos" alt="">
                 </a>
             </div>
 
@@ -70,7 +66,7 @@
 
         <div class="navbar-left menu">
             <ul class="menu__ul">
-                <li class="menu__item"><a href="#!"  class="active__link">Home</a></li>
+                <li class="menu__item"><a href="#!">Home</a></li>
                 <li class="menu__item"><a href="#!">products</a></li>
                 <li class="menu__item"><a href="#!">about</a></li>
                 <li class="menu__item"><a href="#!">pages</a></li>
@@ -78,6 +74,7 @@
                 <li class="menu__item"><a href="#!">Contact</a></li>
             </ul>
         </div>
+
         <div class="navbar-right menu__left">
             <ul class="menu__left__ul">
                 <li class="menu__left__item">
@@ -235,19 +232,19 @@
         <div class="container">
             <div class="row image">
                 <div class="col-lg-4">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Img1.png" class="img-responsive SPECIALS__images__first" alt="">
+                    <img src="_img/Img1.png" class="img-responsive SPECIALS__images__first" alt="">
                     <a href="#!">
                         <span class="SPECIALS__text">on sale</span>
                     </a>
                 </div>
                 <div class="col-lg-4">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/img2.png" class="img-responsive SPECIALS__images__second" alt="">
+                    <img src="_img/img2.png" class="img-responsive SPECIALS__images__second" alt="">
                     <a href="#!">
                         <span class="SPECIALS__text second">special offers</span>
                     </a>
                 </div>
                 <div class="col-lg-4">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Img3.png" class="img-responsive SPECIALS__images__last" alt="">
+                    <img src="_img/Img3.png" class="img-responsive SPECIALS__images__last" alt="">
                     <a href="#!">
                         <span class="SPECIALS__text last">must have</span>
                     </a>
@@ -273,16 +270,16 @@
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Img4.png" alt="" class="im1 first1">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Img_4.png" alt="" class="im2 first2">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Price.png" alt="" class=" Prices">
+                    <img src="_img/Img4.png" alt="" class="im1 first1">
+                    <img src="_img/Img_4.png" alt="" class="im2 first2">
+                    <img src="_img/Price.png" alt="" class=" Prices">
                 </div>
                 <div class="col-lg-4">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/badge.png" alt="" class=" Sale_badge">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Img5.png" alt="" class="im1 second1">
+                    <img src="_img/badge.png" alt="" class=" Sale_badge">
+                    <img src="_img/Img5.png" alt="" class="im1 second1">
                 </div>
                 <div class="col-lg-4">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Img6.png" alt="" class="im1 last1">
+                    <img src="_img/Img6.png" alt="" class="im1 last1">
                 </div>
             </div>
         </div>
@@ -302,8 +299,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Img7.png" alt="" class="im1 first1">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Price.png" alt="" class=" Prices last2">
+                    <img src="_img/Img7.png" alt="" class="im1 first1">
+                    <img src="_img/Price.png" alt="" class=" Prices last2">
                     <div class="price2">
                         <div class="Action__Menu">
                             <ul class="Action__Menu__ul">
@@ -332,11 +329,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Img8.png" alt="" class="im1 second1">
+                    <img src="_img/Img8.png" alt="" class="im1 second1">
                 </div>
                 <div class="col-lg-4">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Stock_badge.png" alt="" class=" Stock_badge">
-                    <img src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/Img9.png" alt="" class="im1 last1">
+                    <img src="_img/Stock_badge.png" alt="" class=" Stock_badge">
+                    <img src="_img/Img9.png" alt="" class="im1 last1">
                 </div>
             </div>
         </div>
@@ -420,8 +417,8 @@
                         <i class="footer__11"><span>@roymarvelous</span>
                             You can seek a refund through
                         </i><br>
-                        <i class="footer__12">TF if it is not as advertised - but it is :)
-                        </i>
+                            <i class="footer__12">TF if it is not as advertised - but it is :)
+                            </i>
                     </p>
                     <p class="footer__text footer__13">
                         21 days ago
@@ -429,27 +426,7 @@
                 </div>
                 <div class="col-lg-4 f3">
                     <h3 class="footer__header">FLICKR WIDGET</h3>
-
-                    <ul class="footer___header_ul">
-                        <li class="footer___header_item">
-                            <a href="#" class="footer___header_link"><img width="76" height="56" alt="pic" src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/flic-1.jpg"></a>
-                        </li>
-                        <li class="footer___header_item">
-                            <a href="#" class="footer___header_link"><img width="76" height="56" alt="pic" src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/flic-2.jpg"></a>
-                        </li>
-                        <li class="footer___header_item">
-                            <a href="#" class="footer___header_link"><img width="76" height="56" alt="pic" src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/flic-3.jpg"></a>
-                        </li>
-                        <li class="footer___header_item">
-                            <a href="#" class="footer___header_link"><img width="76" height="56" alt="pic" src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/flic-4.jpg"></a>
-                        </li>
-                        <li class="footer___header_item">
-                            <a href="#" class="footer___header_link"><img width="76" height="56" alt="pic" src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/flic-5.jpg"></a>
-                        </li>
-                        <li class="footer___header_item">
-                            <a href="#" class="footer___header_link"><img width="76" height="56" alt="pic" src="https://cdn.rawgit.com/sobchenyuk/fooseshoes.github.io/master/_img/flic-6.jpg"></a>
-                        </li>
-                    </ul>
+                    <img src="_img/Img10.png" alt="">
                 </div>
             </div>
         </div>
@@ -482,11 +459,11 @@
                         <li class="footer__1__imag imag3">
                             <a href="#!" class="imag__4">
                                 <span class="icon3"></span>
-                            </a></li>
+                                </a></li>
                         <li class="footer__1__imag imag4">
                             <a href="#!" class="imag__5">
                                 <span class="icon4"></span>
-                            </a></li>
+                                </a></li>
                     </ul>
                 </div>
             </div>
@@ -528,12 +505,7 @@
 </div>
 
 
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<?php include '_parts/counter-footer.php' ?>
 
 </body>
 </html>
