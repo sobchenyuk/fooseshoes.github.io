@@ -120,11 +120,13 @@
     color: rgb(36, 36, 36);
     text-transform: capitalize;
     -webkit-text-stroke: 0.2px;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu__item a:hover {
     text-decoration: none;
     color: rgb(87, 197, 160);
+
  }
 .menu__item .active__link {
     color: rgb(87, 197, 160);
@@ -501,6 +503,11 @@ span.SPECIALS__text:hover {
     color: rgb(188, 181, 167);
     border: 1px solid #BCB4A7;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.dutton a:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(188, 180, 167);
 }
 .im1 {
     width: 356px;
@@ -897,10 +904,11 @@ li.footer__item:nth-child(5):after {
     color: rgba(255, 255, 255, 0.502);
     line-height: 2.083;
     text-align: right;
-    -webkit-text-stroke: 0.3px;
     letter-spacing: 1.8px;
+    -webkit-text-stroke: 0.5px;
+    transition: all 0.3s ease-in-out;
 }
 a.footer__link:hover {
-    color: rgba(0, 0, 0, 0.502);
+    color: rgb(87, 197, 160);
     text-decoration: none;
 }
