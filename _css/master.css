@@ -122,10 +122,10 @@
     -webkit-text-stroke: 0.2px;
 }
 .menu__item a:hover {
-     text-decoration: none;
+    text-decoration: none;
     color: rgb(87, 197, 160);
  }
-.active__link {
+.menu__item .active__link {
     color: rgb(87, 197, 160);
 }
 /*menu left*/
