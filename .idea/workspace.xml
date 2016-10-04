@@ -2,53 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4530c72c-39c2-4690-ab24-ae036e4be421" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/fooseshoes.github.io.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_css/master.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_parts/counter-footer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_parts/counter-header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fooseshoes.github.io/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Новая папка/index.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/aller.light.ttf" afterPath="$PROJECT_DIR$/fonts/aller.light.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/helveticaneuecyr-medium.otf" afterPath="$PROJECT_DIR$/fonts/helveticaneuecyr-medium.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img1.png" afterPath="$PROJECT_DIR$/img/Img1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img10.png" afterPath="$PROJECT_DIR$/img/Img10.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img3.png" afterPath="$PROJECT_DIR$/img/Img3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img4.png" afterPath="$PROJECT_DIR$/img/Img4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img5.png" afterPath="$PROJECT_DIR$/img/Img5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img6.png" afterPath="$PROJECT_DIR$/img/Img6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img7.png" afterPath="$PROJECT_DIR$/img/Img7.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img8.png" afterPath="$PROJECT_DIR$/img/Img8.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img9.png" afterPath="$PROJECT_DIR$/img/Img9.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img_4.png" afterPath="$PROJECT_DIR$/img/Img_4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Price.png" afterPath="$PROJECT_DIR$/img/Price.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Send.png" afterPath="$PROJECT_DIR$/img/Send.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Stock_badge.png" afterPath="$PROJECT_DIR$/img/Stock_badge.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/art.png" afterPath="$PROJECT_DIR$/img/art.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/badge.png" afterPath="$PROJECT_DIR$/img/badge.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/cart.png" afterPath="$PROJECT_DIR$/img/cart.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/cart1.png" afterPath="$PROJECT_DIR$/img/cart1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/eye.png" afterPath="$PROJECT_DIR$/img/eye.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-1.jpg" afterPath="$PROJECT_DIR$/img/flic-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-2.jpg" afterPath="$PROJECT_DIR$/img/flic-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-3.jpg" afterPath="$PROJECT_DIR$/img/flic-3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-4.jpg" afterPath="$PROJECT_DIR$/img/flic-4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-5.jpg" afterPath="$PROJECT_DIR$/img/flic-5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-6.jpg" afterPath="$PROJECT_DIR$/img/flic-6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/icon.png" afterPath="$PROJECT_DIR$/img/icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/icon1.png" afterPath="$PROJECT_DIR$/img/icon1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/icon2.png" afterPath="$PROJECT_DIR$/img/icon2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/icon3.png" afterPath="$PROJECT_DIR$/img/icon3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/icon4.png" afterPath="$PROJECT_DIR$/img/icon4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/img.png" afterPath="$PROJECT_DIR$/img/img.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/img2.png" afterPath="$PROJECT_DIR$/img/img2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/logo.png" afterPath="$PROJECT_DIR$/img/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/search.png" afterPath="$PROJECT_DIR$/img/search.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/share.png" afterPath="$PROJECT_DIR$/img/share.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Новый текстовый документ.txt" afterPath="$PROJECT_DIR$/img/Новый текстовый документ.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/img/share.png" afterPath="$PROJECT_DIR$/img/aaaaa.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/stylesheet.css" afterPath="$PROJECT_DIR$/stylesheets/stylesheet.css" />
     </list>
     <list id="10b25478-6b85-41b2-bb75-380404da6363" name="New changelist" comment="04.10.2016" />
@@ -74,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7113">
-              <caret line="449" column="178" selection-start-line="449" selection-start-column="178" selection-end-line="449" selection-end-column="178" />
+            <state relative-caret-position="210">
+              <caret line="140" column="29" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -84,8 +40,8 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <state relative-caret-position="108">
+              <caret line="301" column="28" selection-start-line="301" selection-start-column="28" selection-end-line="301" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -114,8 +70,8 @@
         <option value="$PROJECT_DIR$/_parts/counter-header.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/_css/master.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/stylesheets/stylesheet.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -175,6 +131,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fooseshoes.github.io" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fooseshoes.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fooseshoes.github.io" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,7 +240,7 @@
       <workItem from="1475570862540" duration="2640000" />
       <workItem from="1475573783127" duration="1439000" />
       <workItem from="1475575727023" duration="26000" />
-      <workItem from="1475576671249" duration="467000" />
+      <workItem from="1475576671249" duration="973000" />
     </task>
     <task id="LOCAL-00001" summary="Новое изменение 04,10,2016">
       <created>1475571467737</created>
@@ -300,17 +270,24 @@
       <option name="project" value="LOCAL" />
       <updated>1475574993651</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Новое изменение 04,10,2016">
+      <created>1475577157882</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1475577157882</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67313000" />
+    <option name="totallyTimeSpent" value="67819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -531,16 +508,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7113">
-          <caret line="449" column="178" selection-start-line="449" selection-start-column="178" selection-end-line="449" selection-end-column="178" />
+        <state relative-caret-position="210">
+          <caret line="140" column="29" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="108">
+          <caret line="301" column="28" selection-start-line="301" selection-start-column="28" selection-end-line="301" selection-end-column="28" />
           <folding />
         </state>
       </provider>
