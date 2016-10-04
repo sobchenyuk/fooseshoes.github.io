@@ -30,6 +30,10 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
 
+    <link rel="stylesheet" href="arcticmodal/jquery.arcticmodal.css">
+    <!-- arcticModal theme -->
+    <link rel="stylesheet" href="arcticmodal/themes/simple.css">
+
 
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
@@ -838,6 +842,18 @@
 </div>
 
 
+<div style="display: none;">
+    <div class="box-modal" id="boxUserFirstInfo">
+        <div class="box-modal_close arcticmodal-close">закрыть</div>
+        <b>Здравствуйте, гость!</b><br>
+        <br>
+        Если вам понравился наш сайт просто напишите в чате <br>
+        Наша команда с радостью подберет вам нужное решение для вашего бизнеса :)
+    </div>
+</div>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
@@ -855,6 +871,38 @@
             titlesFactor: 0
         });
     });
+</script>
+
+
+<!-- arcticModal -->
+<script src="arcticmodal/jquery.arcticmodal.js"></script>
+<!-- cookie -->
+<script src="//yandex.st/jquery/cookie/1.0/jquery.cookie.min.js"></script>
+
+<script>
+    (function($) {
+        $(function() {
+
+            // Проверим, есть ли запись в куках о посещении посетителя
+            // Если запись есть - ничего не делаем
+            if (!$.cookie('was')) {
+
+                // Покажем всплывающее окно
+                $('#boxUserFirstInfo').arcticmodal({
+                    closeOnOverlayClick: false,
+                    closeOnEsc: true
+                });
+
+            }
+
+            // Запомним в куках, что посетитель к нам уже заходил
+            $.cookie('was', true, {
+                expires: 365,
+                path: '/'
+            });
+
+        })
+    })(jQuery)
 </script>
 
 
