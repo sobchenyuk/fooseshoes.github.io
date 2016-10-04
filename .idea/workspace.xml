@@ -2,6 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4530c72c-39c2-4690-ab24-ae036e4be421" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/fooseshoes.github.io.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_css/master.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_parts/counter-footer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_parts/counter-header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fooseshoes.github.io/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Новая папка/index.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/aller.light.ttf" afterPath="$PROJECT_DIR$/fonts/aller.light.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/helveticaneuecyr-medium.otf" afterPath="$PROJECT_DIR$/fonts/helveticaneuecyr-medium.otf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img1.png" afterPath="$PROJECT_DIR$/img/Img1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img10.png" afterPath="$PROJECT_DIR$/img/Img10.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img3.png" afterPath="$PROJECT_DIR$/img/Img3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img4.png" afterPath="$PROJECT_DIR$/img/Img4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img5.png" afterPath="$PROJECT_DIR$/img/Img5.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img6.png" afterPath="$PROJECT_DIR$/img/Img6.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img7.png" afterPath="$PROJECT_DIR$/img/Img7.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img8.png" afterPath="$PROJECT_DIR$/img/Img8.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img9.png" afterPath="$PROJECT_DIR$/img/Img9.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Img_4.png" afterPath="$PROJECT_DIR$/img/Img_4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Price.png" afterPath="$PROJECT_DIR$/img/Price.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Send.png" afterPath="$PROJECT_DIR$/img/Send.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Stock_badge.png" afterPath="$PROJECT_DIR$/img/Stock_badge.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/art.png" afterPath="$PROJECT_DIR$/img/art.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/badge.png" afterPath="$PROJECT_DIR$/img/badge.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/cart.png" afterPath="$PROJECT_DIR$/img/cart.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/cart1.png" afterPath="$PROJECT_DIR$/img/cart1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/eye.png" afterPath="$PROJECT_DIR$/img/eye.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-1.jpg" afterPath="$PROJECT_DIR$/img/flic-1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-2.jpg" afterPath="$PROJECT_DIR$/img/flic-2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-3.jpg" afterPath="$PROJECT_DIR$/img/flic-3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-4.jpg" afterPath="$PROJECT_DIR$/img/flic-4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-5.jpg" afterPath="$PROJECT_DIR$/img/flic-5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/flic-6.jpg" afterPath="$PROJECT_DIR$/img/flic-6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/icon.png" afterPath="$PROJECT_DIR$/img/icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/icon1.png" afterPath="$PROJECT_DIR$/img/icon1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/icon2.png" afterPath="$PROJECT_DIR$/img/icon2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/icon3.png" afterPath="$PROJECT_DIR$/img/icon3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/icon4.png" afterPath="$PROJECT_DIR$/img/icon4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/img.png" afterPath="$PROJECT_DIR$/img/img.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/img2.png" afterPath="$PROJECT_DIR$/img/img2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/logo.png" afterPath="$PROJECT_DIR$/img/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/search.png" afterPath="$PROJECT_DIR$/img/search.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/share.png" afterPath="$PROJECT_DIR$/img/share.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_img/Новый текстовый документ.txt" afterPath="$PROJECT_DIR$/img/Новый текстовый документ.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/stylesheet.css" afterPath="$PROJECT_DIR$/stylesheets/stylesheet.css" />
     </list>
@@ -24,12 +70,12 @@
     <favorites_list name="fooseshoes" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <state relative-caret-position="7113">
+              <caret line="449" column="178" selection-start-line="449" selection-start-column="178" selection-end-line="449" selection-end-column="178" />
               <folding />
             </state>
           </provider>
@@ -38,8 +84,8 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+            <state relative-caret-position="170">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -114,7 +160,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -135,6 +180,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -145,9 +191,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\fooseshoes.github.io\_parts" />
       <recent name="C:\xampp\htdocs\fooseshoes\_fonts" />
     </key>
   </component>
@@ -221,6 +269,8 @@
       <workItem from="1472818436651" duration="5569000" />
       <workItem from="1475570862540" duration="2640000" />
       <workItem from="1475573783127" duration="1439000" />
+      <workItem from="1475575727023" duration="26000" />
+      <workItem from="1475576671249" duration="467000" />
     </task>
     <task id="LOCAL-00001" summary="Новое изменение 04,10,2016">
       <created>1475571467737</created>
@@ -254,13 +304,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66801000" />
+    <option name="totallyTimeSpent" value="67313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -327,7 +377,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_css/master.css">
+    <entry file="file://$PROJECT_DIR$/_parts/_css/master.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8653">
           <caret line="509" column="35" selection-start-line="509" selection-start-column="35" selection-end-line="509" selection-end-column="35" />
@@ -335,14 +385,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_css/master.css">
+    <entry file="file://$PROJECT_DIR$/index.php" />
+    <entry file="file://$PROJECT_DIR$/_parts/_css/master.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12461">
           <caret line="733" column="1" selection-start-line="733" selection-start-column="1" selection-end-line="733" selection-end-column="1" />
@@ -381,13 +425,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="508" column="0" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$PROJECT_DIR$/stylesheets/github-light.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -395,7 +433,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_css/master.css">
+    <entry file="file://$PROJECT_DIR$/_parts/_css/master.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="770" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
@@ -413,8 +451,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-816">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_parts/_css/master.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8653">
+          <caret line="509" column="35" selection-start-line="509" selection-start-column="35" selection-end-line="509" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php" />
+    <entry file="file://$PROJECT_DIR$/_parts/_css/master.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12461">
+          <caret line="733" column="1" selection-start-line="733" selection-start-column="1" selection-end-line="733" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_parts/counter-footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="89" selection-start-line="3" selection-start-column="89" selection-end-line="3" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_parts/counter-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php" />
+    <entry file="file://$PROJECT_DIR$/stylesheets/github-light.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_parts/_css/master.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="770" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7113">
+          <caret line="449" column="178" selection-start-line="449" selection-start-column="178" selection-end-line="449" selection-end-column="178" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding />
         </state>
       </provider>
