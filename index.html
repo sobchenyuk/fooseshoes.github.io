@@ -18,43 +18,32 @@
     <meta name="generator" content="github.io"/>
 
     <meta property="og:site_name" content="Создание сайтов с нуля">
-    <meta property="og:url" content="https://sobchenyuk.github.io/fooseshoes.github.io/">
+    <meta property="og:url" content="http://portfolio.optimist.biz.ua/fooseshoes.github.io/">
     <meta property="og:title" content="Создание сайтов с нуля">
-
 
     <meta property="og:title" content="Создание сайтов с нуля"/>
     <meta property="og:type" content="movie"/>
-    <meta property="og:url" content="https://sobchenyuk.github.io/fooseshoes.github.io/"/>
+    <meta property="og:url" content="http://portfolio.optimist.biz.ua/fooseshoes.github.io"/>
     <meta property="og:image" content="img/site.png"/>
     <meta property="og:site_name" content="Создание сайтов с нуля"/>
     <meta property="og:description" content="Собченюк Андрей Владимирович! Люблю делать сайты превлекательными. +380669353050"/>
-
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-
-    <link rel="stylesheet" href="arcticmodal/jquery.arcticmodal.css">
-    <!-- arcticModal theme -->
-    <link rel="stylesheet" href="arcticmodal/themes/simple.css">
-
-
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
-
 
     <noscript>
         <link rel="stylesheet" type="text/css" href="css/noscript.css"/>
     </noscript>
 
-
 </head>
 <body>
 
 
-<div class="wrap">
+<div id="app" class="wrap">
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
@@ -64,20 +53,41 @@
                 </a>
             </div>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <div class="collapse navbar-collapse"
+                 id="bs-example-navbar-collapse-2">
+
                 <div class="navbar-right">
-                    <form class="navbar-form navbar-left form__1" method="post" action="#" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control">
-                            <input type="submit" value=" ">
-                        </div>
+
+                    <form class="navbar-form navbar-left form__1"
+                          v-bind:class="{ focus: focused }"
+                          method="post"
+                          action="#"
+                          role="search">
+                        <label for="search"></label>
+                            <input type="text"
+                                   id="search"
+                                   class="form-control"
+                                   @focus="onFocus"
+                                   @blur="onBlur"
+                                   v-model="search">
+                        <input type="submit" value="">
                     </form>
 
                     <div class="navbar-right registry">
                         <ul class="registry__ul">
-                            <li class="registry__item"><a href="#!" class="link">Login</a></li>
-                            <li class="registry__item">or</li>
-                            <li class="registry__item"><a href="#!" class="link">register</a></li>
+                            <li class="registry__item">
+                                <a href="#!" class="link">
+                                    Login
+                                </a>
+                            </li>
+                            <li class="registry__item">
+                                or
+                            </li>
+                            <li class="registry__item">
+                                <a href="#!" class="link">
+                                    register
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -85,17 +95,18 @@
         </div>
     </nav>
 
-
     <div class="container mains">
 
         <div class="navbar-left menu">
             <ul class="menu__ul">
-                <li class="menu__item"><a href="#!" class="active__link">Home</a></li>
-                <li class="menu__item"><a href="#!">products</a></li>
-                <li class="menu__item"><a href="#!">about</a></li>
-                <li class="menu__item"><a href="#!">pages</a></li>
-                <li class="menu__item"><a href="#!">blog</a></li>
-                <li class="menu__item"><a href="#!">Contact</a></li>
+                <li class="menu__item" v-for="(item, index) in menu">
+                    <a href="#!"
+                       v-bind:class="{ active__link: index === active }"
+                       @click="onActive(index)"
+                    >
+                        {{ item.text }}
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="navbar-right menu__left">
@@ -398,171 +409,29 @@
                 </ul><!-- ei-slider-thumbs -->
             </div><!-- ei-slider -->
 
-
-
-
-
-            <!--<div class="Item__Details">
-
-
-                <div class="Price">
-                    <span>$145,99</span>
-                </div>
-
-
-                <div class="Desc">
-                    <h1 class="Desc__Zagolovok">
-                        Pink Shoes
-                        <span>201
-                            <span class="Desc__Zagolovok__int">3</span>
-                            <span class="Desc__Zagolovok__coll">Collection</span>
-                        </span>
-                    </h1>
-                    <p class="Desc__Discription">
-                        Nunc non fermentum nunc. Sed ut ante <br>
-                        <span>eget leo tempor consequat sit amet eu orci.</span><br>
-                        Donec dignissim dolor eget..
-                    </p>
-                </div>
-
-
-
-                <div class="Action__Menu">
-                    <ul class="Action__Menu__ul">
-                        <li class="Action__Menu__item">
-                            <a href="#!" class="Action__Menu__link">
-                                <i class="eye"></i>
-                            </a>
-                        </li>
-                        <li class="Action__Menu__item">
-                            <a href="#!" class="Action__Menu__link">
-                                <i class="star"></i>
-                            </a>
-                        </li>
-                        <li class="Action__Menu__item">
-                            <a href="#!" class="Action__Menu__link">
-                                <i class="aaaaa"></i>
-                            </a>
-                        </li>
-                        <li class="Action__Menu__item">
-                            <a href="#!" class="Action__Menu__link">
-                                <i class="buy"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-
-
-            </div>-->
-
         </div>
 </div>
-
-<!--        <div class="brend">
-            <div class="container brend__menu">
-                <div class="line">
-                    <div class="row">
-                        <div class="col-lg-2 under__ceroi">
-                        <span>
-                            <p class="under__ceroi__first"></p>
-                        </span>
-                        </div>
-                        <div class="col-lg-2 under__ceroi">
-                        <span class="under__ceroi__second">
-
-                        </span>
-                        </div>
-                        <div class="col-lg-2 under__ceroi">
-                        <span class="under__ceroi__three">
-
-                        </span>
-                        </div>
-                        <div class="col-lg-2 under__ceroi">
-                        <span class="under__ceroi__fourth">
-
-                        </span>
-                        </div>
-                        <div class="col-lg-2 under__ceroi">
-                        <span class="last">
-
-                        </span>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="row brend__text">
-                    <div class="col-lg-2 brn">
-                        <p class="text-center brend__br first">
-                            Pink Shoes
-                            <span>
-                            Now af $145,99
-                        </span>
-                        </p>
-                    </div>
-                    <div class="col-lg-2 brn">
-                        <p class="text-center brend__br second">
-                            Anna Field
-                            <span>
-                            Limited Edition
-                        </span>
-                        </p>
-                    </div>
-                    <div class="col-lg-2 brn">
-                        <p class="text-center brend__br three">
-                            Prada
-                            <span>
-                        Summer is coming
-                        </span>
-                        </p>
-                    </div>
-                    <div class="col-lg-2 brn">
-                        <p class="text-center brend__br fourth">
-                            Casadei
-                            <span>
-                            All Colors avaiable
-                        </span>
-                        </p>
-                    </div>
-                    <div class="col-lg-2 brn">
-                        <p class="text-center brend__br five">
-                            Mellow Yellow
-                            <span>
-                        Free delivery
-                        </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
-
-
 
     <div class="SPECIALS">
         <div class="container">
             <div class="row image">
-                <div class="col-lg-4">
-                    <img src="img/Img1.png" class="img-responsive SPECIALS__images__first" alt="">
-                    <a href="#!">
-                        <span class="SPECIALS__text">on sale</span>
-                    </a>
+
+                <div class="col-lg-4 shop_window" v-for="item in shop_window">
+                    <img :src="item.images"
+                         class="img-responsive SPECIALS__images__first"
+                         alt=""
+                    >
+                    <div class="shop_window__box">
+                        <a href="#!"
+                           class="shop_window__link"
+                        >
+                        <span class="SPECIALS__text">
+                            {{ item.text }}
+                        </span>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <img src="img/img2.png" class="img-responsive SPECIALS__images__second" alt="">
-                    <a href="#!">
-                        <span class="SPECIALS__text second">special offers</span>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <img src="img/Img3.png" class="img-responsive SPECIALS__images__last" alt="">
-                    <a href="#!">
-                        <span class="SPECIALS__text last">must have</span>
-                    </a>
-                </div>
+
             </div>
         </div>
     </div>
@@ -777,7 +646,9 @@
             <form class="navbar-form navbar-left footer__submit" action="#!" method="post" role="search">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Enter email for newsletter">
-                    <input type="submit" value="">
+                    <div>
+                        <input type="submit" value="">
+                    </div>
                 </div>
 
             </form>
@@ -823,20 +694,8 @@
                 </div>
                 <div class="col-lg-6 navbar-right">
                     <ul class="footer__ul">
-                        <li class="footer__item">
-                            <a href="#!" class="footer__link">Home</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#!" class="footer__link">Support</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#!" class="footer__link">Terms and Conditions</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#!" class="footer__link">Faqs</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#!" class="footer__link">Contact us</a>
+                        <li class="footer__item" v-for="item in menu_footer">
+                            <a href="#!" class="footer__link">{{ item.text }}</a>
                         </li>
                     </ul>
                 </div>
@@ -847,18 +706,51 @@
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
-<div style="display: none;">
-    <div class="box-modal" id="boxUserFirstInfo">
-        <div class="box-modal_close arcticmodal-close">закрыть</div>
-        <b>Здравствуйте, гость!</b><br>
-        <br>
-        Если вам понравился наш сайт просто напишите в чате <br>
-        Наша команда с радостью подберет вам нужное решение для вашего бизнеса :)
-    </div>
-</div>
-
-
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            focused: false,
+            active: 0,
+            search: '',
+            menu: [
+                { text: 'Home' },
+                { text: 'products' },
+                { text: 'about' },
+                { text: 'pages' },
+                { text: 'blog' },
+                { text: 'Contact' }
+            ],
+            menu_footer: [
+                { text: 'Home' },
+                { text: 'Support' },
+                { text: 'Terms and Conditions' },
+                { text: 'Faqs' },
+                { text: 'Contact us' },
+            ],
+            shop_window: [
+                { images: 'img/Img1.png', text: 'on sale'},
+                { images: 'img/Img2.png', text: 'special offers'},
+                { images: 'img/Img3.png', text: 'must have'},
+            ]
+        },
+        methods: {
+            onFocus() {
+                this.focused = true
+            },
+            onBlur() {
+                if(!this.search.length) {
+                    this.focused = false
+                }
+            },
+            onActive(index) {
+                this.active = index;
+            }
+        }
+    })
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
@@ -867,7 +759,6 @@
 
 
 <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript">
     $(function () {
         $('#ei-slider').eislideshow({
@@ -879,82 +770,5 @@
     });
 </script>
 
-
-<!-- arcticModal -->
-<script src="arcticmodal/jquery.arcticmodal.js"></script>
-<!-- cookie -->
-<script src="//yandex.st/jquery/cookie/1.0/jquery.cookie.min.js"></script>
-
-<script>
-    (function($) {
-        $(function() {
-
-            // Проверим, есть ли запись в куках о посещении посетителя
-            // Если запись есть - ничего не делаем
-            if (!$.cookie('was')) {
-
-                // Покажем всплывающее окно
-                $('#boxUserFirstInfo').arcticmodal({
-                    closeOnOverlayClick: false,
-                    closeOnEsc: true
-                });
-
-            }
-
-            // Запомним в куках, что посетитель к нам уже заходил
-            $.cookie('was', true, {
-                expires: 365,
-                path: '/'
-            });
-
-        })
-    })(jQuery)
-</script>
-
-
-<script type="text/javascript" src="//vk.com/js/api/openapi.js?130"></script>
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-    VK.Widgets.CommunityMessages("vk_community_messages", 116827570, {shown: ""});
-</script>
-
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function () {
-            try {
-                w.yaCounter40004485 = new Ya.Metrika({
-                    id: 40004485,
-                    clickmap: true,
-                    trackLinks: true,
-                    accurateTrackBounce: true,
-                    webvisor: true
-                });
-            } catch (e) {
-            }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () {
-                    n.parentNode.insertBefore(s, n);
-                };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else {
-            f();
-        }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/40004485" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
 </body>
 </html>
