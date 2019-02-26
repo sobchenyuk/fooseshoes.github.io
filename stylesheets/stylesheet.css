@@ -52,6 +52,7 @@ ol, ul {
   border-radius: 0;
   position: relative;
   left: -21px;
+  transition: 0.3s;
 }
 .form__1:hover #search,
 .form__1.focus #search {
@@ -575,27 +576,28 @@ span.SPECIALS__text:hover {
 /* --------------------------window*/
 .window {
   background-color: #ebe7df;
-  padding-top: 15px;
   padding-bottom: 50px;
+}
+.window_title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 45px 0;
 }
 .text {
   font-size: 25px;
-  font-family: "Aller";
+  font-family: "Aller", sans-serif;
   color: rgb(36, 36, 36);
-  line-height: 2.4;
-  text-align: left;
   letter-spacing: 2.2px;
-  position: relative;
-  left: 14px;
+}
+.text h3 {
+  margin: 0;
 }
 .dutton {
   font-size: 14px;
-  font-family: "Aller";
+  font-family: "Aller", sans-serif;
   font-weight: bold;
   text-align: center;
-  position: relative;
-  top: 18px;
-  left: -52px;
 }
 .dutton a {
   text-transform: capitalize;
@@ -610,8 +612,7 @@ span.SPECIALS__text:hover {
   background: rgb(188, 180, 167);
 }
 .im1 {
-  width: 356px;
-  height: 221px;
+  width: 100%;
 }
 .Sale_badge {
   position: absolute;
@@ -659,14 +660,70 @@ span.SPECIALS__text:hover {
   margin-bottom: 25px;
 }
 .window__buttom .dutton {
-  top: 21px;
+
+}
+.card_product {
+  cursor: pointer;
 }
 .price2 {
-  height: 49px;
   background-color: #fff;
-  width: 356px;
+  width: 100%;
   border-top: 1px solid #d2d2d2;
+  min-height: 57px;
 }
+.price_title {
+  font-family: "Aller", sans-serif;
+  color: #000000;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 15px;
+  margin: 0 0 0 2em;
+  transition: all 0.3s ease-in-out;
+}
+.price_box {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 57px;
+}
+.price_number {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Aller", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background: #00c6a0;
+  padding: 24px 11px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+
+.Action__Menu {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.card_product .Action__Menu {
+  position: absolute;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  margin: 0 0 0 2em;
+}
+.card_product:hover .price_title {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.card_product:hover .Action__Menu {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
 
 /* --------------------------ADDON*/
 .dash {
@@ -1055,4 +1112,13 @@ li.footer__item:nth-child(5):after {
 .footer__link:focus {
   color: rgb(87, 197, 160);
   text-decoration: none;
+}
+
+
+.alert {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  z-index: 1000;
 }

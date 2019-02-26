@@ -114,13 +114,13 @@
                 <li class="menu__left__item">
                     <a href="#!" class="menu__left__item__link">
                         <i class="star"></i>
-                        <span class="rank">30</span>
+                        <span class="rank">{{ changeRank }}</span>
                     </a>
                 </li>
                 <li class="menu__left__item">
                     <a href="#!" class="menu__left__item__link">
                         <i class="basket"></i>
-                        <span class="order">0</span>
+                        <span class="order">{{ changeOrder }}</span>
                     </a>
                 </li>
             </ul>
@@ -439,84 +439,101 @@
 
     <div class="window">
         <div class="container">
-            <div class="row">
-                <div class="text navbar-left">
-                    <p>
+            <div class="window_title">
+                <div class="text">
+                    <h3>
                         New arrivals on FooseShoes
-                    </p>
+                    </h3>
                 </div>
-                <div class="dutton navbar-right">
+                <div class="dutton">
                     <a href="#!">
-                        Show All btn
+                        Show All
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="img/Img4.png" alt="" class="im1 first1">
-                    <img src="img/Img_4.png" alt="" class="im2 first2">
+                    <img src="img/Img4.png" alt="" class="im1 img-responsive1">
+                    <img src="img/Img_4.png" alt="" class="im1 img-responsive">
                     <img src="img/Price.png" alt="" class=" Prices">
                 </div>
                 <div class="col-lg-4">
                     <img src="img/badge.png" alt="" class=" Sale_badge">
-                    <img src="img/Img5.png" alt="" class="im1 second1">
+                    <img src="img/Img5.png" alt="" class="im1 img-responsive">
                 </div>
                 <div class="col-lg-4">
-                    <img src="img/Img6.png" alt="" class="im1 last1">
+                    <img src="img/Img6.png" alt="" class="im1 img-responsive">
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row window__buttom">
-                <div class="text navbar-left">
-                    <p>
-                        Best sellers of the month
-                    </p>
+            <div class="window_title">
+                <div class="text">
+                    <h3>
+                        New arrivals on FooseShoes
+                    </h3>
                 </div>
-                <div class="dutton navbar-right">
+                <div class="dutton">
                     <a href="#!">
-                        Show All btn
+                        Show All
                     </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="img/Img7.png" alt="" class="im1 first1">
-                    <img src="img/Price.png" alt="" class=" Prices last2">
+                <div class="col-lg-4 card_product">
+                    <img src="img/Img7.png" alt="" class="im1 img-responsive">
                     <div class="price2">
-                        <div class="Action__Menu">
-                            <ul class="Action__Menu__ul">
-                                <li class="Action__Menu__item">
-                                    <a href="#!" class="Action__Menu__link">
-                                        <i class="eye"></i>
-                                    </a>
-                                </li>
-                                <li class="Action__Menu__item">
-                                    <a href="#!" class="Action__Menu__link">
-                                        <i class="star"></i>
-                                    </a>
-                                </li>
-                                <li class="Action__Menu__item">
-                                    <a href="#!" class="Action__Menu__link">
-                                        <i class="aaaaa"></i>
-                                    </a>
-                                </li>
-                                <li class="Action__Menu__item">
-                                    <a href="#!" class="Action__Menu__link">
-                                        <i class="buy"></i>
-                                    </a>
-                                </li>
-                            </ul>
+
+                        <div class="price_box">
+                            <span class="price_number">
+                                $145,99
+                            </span>
+                            <h3 class="price_title">
+                                buffalo decollete
+                            </h3>
+
+                            <div class="Action__Menu">
+                                <ul class="Action__Menu__ul">
+                                    <li class="Action__Menu__item">
+                                        <a href="#!" class="Action__Menu__link">
+                                            <i class="eye"></i>
+                                        </a>
+                                    </li>
+                                    <li class="Action__Menu__item">
+                                        <a href="#!"
+                                           class="Action__Menu__link"
+                                            @click="onFavorites(10)">
+                                            <i class="star"></i>
+                                        </a>
+                                    </li>
+                                    <li class="Action__Menu__item">
+                                        <a href="#!" class="Action__Menu__link">
+                                            <i class="aaaaa"></i>
+                                        </a>
+                                    </li>
+                                    <li class="Action__Menu__item">
+                                        <a href="#!"
+                                           class="Action__Menu__link"
+                                           @click="onCard(10)"
+                                        >
+                                            <i class="buy"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
+
+
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="img/Img8.png" alt="" class="im1 second1">
+                    <img src="img/Img8.png" alt="" class="im1 img-responsive">
                 </div>
                 <div class="col-lg-4">
                     <img src="img/Stock_badge.png" alt="" class=" Stock_badge">
-                    <img src="img/Img9.png" alt="" class="im1 last1">
+                    <img src="img/Img9.png" alt="" class="im1 img-responsive">
                 </div>
             </div>
         </div>
@@ -704,6 +721,17 @@
         </div>
     </div>
 
+    <div class="alert alert-success alert-dismissible"
+         v-bind:style="{ display: !modalOpen ? 'none' : 'block'}"
+         role="alert">
+        <button type="button"
+                class="close"
+                @click="onCloseModal">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        {{ modalText }}
+    </div>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -715,6 +743,16 @@
             focused: false,
             active: 0,
             search: '',
+            rank: 0,
+            order: [],
+            favorites: [],
+            massage: [
+                'Tовар добавлен в избранное',
+                'Tовар добавлен в картзину',
+                'Товар удален из избранное',
+            ],
+            modalText: '',
+            modalOpen: false,
             menu: [
                 { text: 'Home' },
                 { text: 'products' },
@@ -747,6 +785,45 @@
             },
             onActive(index) {
                 this.active = index;
+            },
+            onFavorites(number) {
+                const index = this.favorites.indexOf(number);
+                if(index === -1) {
+                    this.favorites.push(number);
+                    this.modalText = this.massage[0];
+                } else {
+                    delete this.favorites[index];
+                    this.favorites = this.favorites.filter(function (el) {
+                        return el != null;
+                    });
+                    this.modalText = this.massage[2];
+                }
+                this.modalOpen = true;
+                setTimeout(()=>{
+                    this.modalOpen = false;
+                }, 1000)
+            },
+            onCard(number) {
+                const index = this.order.indexOf(number);
+                if(index === -1) {
+                    this.order.push(number);
+                    this.modalText = this.massage[1];
+                    this.modalOpen = true;
+                    setTimeout(()=>{
+                        this.modalOpen = false;
+                    }, 1000)
+                }
+            },
+            onCloseModal() {
+                this.modalOpen = false;
+            }
+        },
+        computed: {
+            changeRank() {
+                return this.favorites.length
+            },
+            changeOrder() {
+                return this.order.length
             }
         }
     })
