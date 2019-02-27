@@ -222,8 +222,14 @@ span.order {
   position: relative;
   width: 100%;
 }
+.ei-slider {
+  background-color: #fff;
+}
 .ei-slider-thumbs li a span.active {
   color: #ffffff;
+}
+.ei-slider-thumbs li:hover img {
+  width: 100%;
 }
 .ei-slider-thumbs li a span {
   padding-top: 30px;
@@ -232,6 +238,16 @@ span.order {
   color: #999999;
   text-transform: capitalize;
   letter-spacing: 2px;
+}
+.ei-slider-thumbs li{
+  width: 100%;
+}
+.ei-slider-thumbs {
+  display: flex;
+}
+.ei-slider-thumbs li.ei-slider-element {
+  width: auto;
+  transition: .5s;
 }
 .ei-slider-thumbs li a p {
   text-transform: capitalize;
@@ -242,6 +258,8 @@ span.order {
   letter-spacing: 1.6px;
   -webkit-text-stroke: 1px;
 }
+
+
 .ei-title h3.btns {
   font-size: 15px;
   font-family: "Aller";
@@ -254,6 +272,11 @@ span.order {
   left: 4px;
   top: 10px;
   width: 76px;
+}
+
+.ei-title .Action__Menu {
+  display: block;
+  position: static;
 }
 
 .ei-title h3.ei-title_h2 {
@@ -282,6 +305,10 @@ div.ei-title {
   position: absolute;
   right: 5%;
   top: 4%;
+  transition: all 1s ease;
+}
+.ei-title.show {
+  transform: translateX(0);
 }
 /* left top */
 .Item__Details {
@@ -307,6 +334,9 @@ div.ei-title {
 .Desc {
   margin-top: 45px;
 }
+.ei-title__flex {
+  display: flex;
+}
 .Desc__Zagolovok {
   font-size: 40px;
   font-family: "Aller";
@@ -320,9 +350,8 @@ div.ei-title {
 }
 .Desc__Zagolovok__int {
   font-size: 40px !important;
-  top: 43%;
-  left: 18%;
-  position: absolute;
+  display: inline-block;
+  transform: translateY(7%);
 }
 .Desc__Zagolovok__coll {
   margin-left: 6%;
@@ -1116,9 +1145,36 @@ li.footer__item:nth-child(5):after {
 
 
 .alert {
+  display: none;
   position: fixed;
   bottom: 0;
   width: 100%;
   margin-bottom: 0;
   z-index: 1000;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-to, .fade-leave {
+  opacity: 1;
+}
+
+.fade-enter-to .ei-title,
+.fade-leave .ei-title{
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 10;
+}
+
+.fade-enter .ei-title,
+.fade-leave-to .ei-title{
+  transform: translateX(20%);
+  opacity: 0;
+  z-index: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.8s ease;
 }

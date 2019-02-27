@@ -129,279 +129,396 @@
 
 
 
-<div class="slider">
+<div class="slider"
+     @mouseover="onSliderAutoplayStop"
+     @mouseleave="onSliderAutoplayStart"
+>
         <div class="wrapper">
 
-            <div id="ei-slider" class="ei-slider">
+            <div
+                 id="ei-slider"
+                 class="ei-slider"
+            >
                 <ul class="ei-slider-large">
-                    <li>
-                        <img src="img/images/large/slider-image1.jpg" alt="image06"/>
-                        <div class="ei-title">
+                    <transition name="fade">
+                        <li v-if="isActive === 0">
+                            <img src="img/images/large/slider-image1.jpg" alt="image06"
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }"/>
+                            <div class="ei-title">
+                                    <h3 class="btns">
+                                        $145,99
+                                    </h3>
+                                    <h3 class="ei-title_h2">
+                                            Pink Shoes
+                                        <span class="ei-title__flex">
+                                           <span class="ei-title__flex">
+                                                201<span class="Desc__Zagolovok__int">3</span>
+                                            </span>
+                                            <span class="Desc__Zagolovok__coll">
+                                                Collection
+                                            </span>
+                                        </span>
+                                    </h3>
+                                        <h3 class="active">
+                                            Nunc non fermentum nunc. Sed ut ante <br>
+                                            eget leo tempor consequat sit amet eu orci.<br>
+                                            Donec dignissim dolor eget..
+                                        </h3>
+                                    <div class="Action__Menu">
+                                                <a href="#!" class="Action__Menu__link">
+                                                    <i class="eye"></i>
+                                                </a>
+                                                <a href="#!" class="Action__Menu__link" @click="onFavorites(1)">
+                                                    <i class="star"></i>
+                                                </a>
+                                                <a href="#!" class="Action__Menu__link">
+                                                    <i class="aaaaa"></i>
+                                                </a>
+                                                <a href="#!" class="Action__Menu__link" @click="onCard(1)">
+                                                    <i class="buy"></i>
+                                                </a>
+                                    </div>
+                            </div>
+                        </li>
+                    </transition>
+                    <transition name="fade">
+                        <li v-if="isActive === 1">
+                            <img src="img/images/large/slider-image4.jpg" alt="image01"
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                            <div class="ei-title">
                                 <h3 class="btns">
                                     $145,99
                                 </h3>
                                 <h3 class="ei-title_h2">
-                                        Pink Shoes <br> 201 <span class="Desc__Zagolovok__int">3</span>
-                                    <span class="Desc__Zagolovok__coll">Collection</span>
+                                    Anna Field
+                                    <span class="ei-title__flex">
+                                        <span class="ei-title__flex">
+                                            201<span class="Desc__Zagolovok__int">3</span>
+                                        </span>
+                                        <span class="Desc__Zagolovok__coll">
+                                                Collection
+                                        </span>
+                                   </span>
                                 </h3>
-                                    <h3 class="active">
-                                        Nunc non fermentum nunc. Sed ut ante <br>
-                                        eget leo tempor consequat sit amet eu orci.<br>
-                                        Donec dignissim dolor eget..
-                                    </h3>
-                                <h3 class="Action__Menu">
-                                            <a href="#!" class="Action__Menu__link">
-                                                <i class="eye"></i>
-                                            </a>
-                                            <a href="#!" class="Action__Menu__link">
-                                                <i class="star"></i>
-                                            </a>
-                                            <a href="#!" class="Action__Menu__link">
-                                                <i class="aaaaa"></i>
-                                            </a>
-                                            <a href="#!" class="Action__Menu__link">
-                                                <i class="buy"></i>
-                                            </a>
+                                <h3 class="active">
+                                    Nunc non fermentum nunc. Sed ut ante <br>
+                                    eget leo tempor consequat sit amet eu orci.<br>
+                                    Donec dignissim dolor eget..
                                 </h3>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/images/large/slider-image4.jpg" alt="image01" />
-                        <div class="ei-title">
-                            <h3 class="btns">
-                                $145,99
-                            </h3>
-                            <h3 class="ei-title_h2">
-                                Pink Shoes <br> 201 <span class="Desc__Zagolovok__int">3</span>
-                                <span class="Desc__Zagolovok__coll">Collection</span>
-                            </h3>
-                            <h3 class="active">
-                                Nunc non fermentum nunc. Sed ut ante <br>
-                                eget leo tempor consequat sit amet eu orci.<br>
-                                Donec dignissim dolor eget..
-                            </h3>
-                            <h3 class="Action__Menu">
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="eye"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="star"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="aaaaa"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="buy"></i>
-                                </a>
-                            </h3>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/images/large/slider-image3.jpg" alt="image02" />
-                        <div class="ei-title">
-                            <h3 class="btns">
-                                $145,99
-                            </h3>
-                            <h3 class="ei-title_h2">
-                                Pink Shoes <br> 201 <span class="Desc__Zagolovok__int">3</span>
-                                <span class="Desc__Zagolovok__coll">Collection</span>
-                            </h3>
-                            <h3 class="active">
-                                Nunc non fermentum nunc. Sed ut ante <br>
-                                eget leo tempor consequat sit amet eu orci.<br>
-                                Donec dignissim dolor eget..
-                            </h3>
-                            <h3 class="Action__Menu">
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="eye"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="star"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="aaaaa"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="buy"></i>
-                                </a>
-                            </h3>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/images/large/slider-image4.jpg" alt="image03"/>
-                        <div class="ei-title">
-                            <h3 class="btns">
-                                $145,99
-                            </h3>
-                            <h3 class="ei-title_h2">
-                                Pink Shoes <br> 201 <span class="Desc__Zagolovok__int">3</span>
-                                <span class="Desc__Zagolovok__coll">Collection</span>
-                            </h3>
-                            <h3 class="active">
-                                Nunc non fermentum nunc. Sed ut ante <br>
-                                eget leo tempor consequat sit amet eu orci.<br>
-                                Donec dignissim dolor eget..
-                            </h3>
-                            <h3 class="Action__Menu">
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="eye"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="star"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="aaaaa"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="buy"></i>
-                                </a>
-                            </h3>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/images/large/slider-image1.jpg" alt="image04"/>
-                        <div class="ei-title">
-                            <h3 class="btns">
-                                $145,99
-                            </h3>
-                            <h3 class="ei-title_h2">
-                                Pink Shoes <br> 201 <span class="Desc__Zagolovok__int">3</span>
-                                <span class="Desc__Zagolovok__coll">Collection</span>
-                            </h3>
-                            <h3 class="active">
-                                Nunc non fermentum nunc. Sed ut ante <br>
-                                eget leo tempor consequat sit amet eu orci.<br>
-                                Donec dignissim dolor eget..
-                            </h3>
-                            <h3 class="Action__Menu">
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="eye"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="star"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="aaaaa"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="buy"></i>
-                                </a>
-                            </h3>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/images/large/slider-image5.jpg" alt="image05"/>
-                        <div class="ei-title">
-                            <h3 class="btns">
-                                $145,99
-                            </h3>
-                            <h3 class="ei-title_h2">
-                                Pink Shoes <br> 201 <span class="Desc__Zagolovok__int">3</span>
-                                <span class="Desc__Zagolovok__coll">Collection</span>
-                            </h3>
-                            <h3 class="active">
-                                Nunc non fermentum nunc. Sed ut ante <br>
-                                eget leo tempor consequat sit amet eu orci.<br>
-                                Donec dignissim dolor eget..
-                            </h3>
-                            <h3 class="Action__Menu">
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="eye"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="star"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="aaaaa"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="buy"></i>
-                                </a>
-                            </h3>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/images/large/slider-image3.jpg" alt="image07"/>
-                        <div class="ei-title">
-                            <h3 class="btns">
-                                $145,99
-                            </h3>
-                            <h3 class="ei-title_h2">
-                                Pink Shoes <br> 201 <span class="Desc__Zagolovok__int">3</span>
-                                <span class="Desc__Zagolovok__coll">Collection</span>
-                            </h3>
-                            <h3 class="active">
-                                Nunc non fermentum nunc. Sed ut ante <br>
-                                eget leo tempor consequat sit amet eu orci.<br>
-                                Donec dignissim dolor eget..
-                            </h3>
-                            <h3 class="Action__Menu">
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="eye"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="star"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="aaaaa"></i>
-                                </a>
-                                <a href="#!" class="Action__Menu__link">
-                                    <i class="buy"></i>
-                                </a>
-                            </h3>
-                        </div>
-                    </li>
+                                <div class="Action__Menu">
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="eye"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onFavorites(2)">
+                                        <i class="star"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="aaaaa"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onCard(2)">
+                                        <i class="buy"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </transition>
+                    <transition name="fade">
+                        <li v-if="isActive === 2">
+                            <img src="img/images/large/slider-image3.jpg" alt="image02"
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                            <div class="ei-title">
+                                <h3 class="btns">
+                                    $145,99
+                                </h3>
+                                <h3 class="ei-title_h2">
+                                    Prada
+                                    <span class="ei-title__flex">
+                                        <span class="ei-title__flex">
+                                            201<span class="Desc__Zagolovok__int">3</span>
+                                        </span>
+                                        <span class="Desc__Zagolovok__coll">
+                                                Collection
+                                        </span>
+                                   </span>
+                                </h3>
+                                <h3 class="active">
+                                    Nunc non fermentum nunc. Sed ut ante <br>
+                                    eget leo tempor consequat sit amet eu orci.<br>
+                                    Donec dignissim dolor eget..
+                                </h3>
+                                <div class="Action__Menu">
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="eye"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onFavorites(3)">
+                                        <i class="star"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="aaaaa"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onCard(3)">
+                                        <i class="buy"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </transition>
+                    <transition name="fade">
+                        <li v-if="isActive === 3">
+                            <img src="img/images/large/slider-image4.jpg" alt="image03"
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                            <div class="ei-title">
+                                <h3 class="btns">
+                                    $145,99
+                                </h3>
+                                <h3 class="ei-title_h2">
+                                    Casa Devi
+                                    <span class="ei-title__flex">
+                                        <span class="ei-title__flex">
+                                            201<span class="Desc__Zagolovok__int">3</span>
+                                        </span>
+                                        <span class="Desc__Zagolovok__coll">
+                                                Collection
+                                        </span>
+                                   </span>
+                                </h3>
+                                <h3 class="active">
+                                    Nunc non fermentum nunc. Sed ut ante <br>
+                                    eget leo tempor consequat sit amet eu orci.<br>
+                                    Donec dignissim dolor eget..
+                                </h3>
+                                <div class="Action__Menu">
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="eye"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onFavorites(4)">
+                                        <i class="star"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="aaaaa"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onCard(4)">
+                                        <i class="buy"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </transition>
+                    <transition name="fade">
+                        <li v-if="isActive === 4">
+                            <img src="img/images/large/slider-image1.jpg" alt="image04"
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                            <div class="ei-title">
+                                <h3 class="btns">
+                                    $145,99
+                                </h3>
+                                <h3 class="ei-title_h2">
+                                    Mellow Yellow
+                                    <span class="ei-title__flex">
+                                        <span class="ei-title__flex">
+                                            201<span class="Desc__Zagolovok__int">3</span>
+                                        </span>
+                                        <span class="Desc__Zagolovok__coll">
+                                                Collection
+                                        </span>
+                                   </span>
+                                </h3>
+                                <h3 class="active">
+                                    Nunc non fermentum nunc. Sed ut ante <br>
+                                    eget leo tempor consequat sit amet eu orci.<br>
+                                    Donec dignissim dolor eget..
+                                </h3>
+                                <div class="Action__Menu">
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="eye"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onFavorites(51)">
+                                        <i class="star"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="aaaaa"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onCard(5)">
+                                        <i class="buy"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </transition>
+                    <transition name="fade">
+                        <li v-if="isActive === 5">
+                            <img src="img/images/large/slider-image5.jpg" alt="image05"
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                            <div class="ei-title">
+                                <h3 class="btns">
+                                    $145,99
+                                </h3>
+                                <h3 class="ei-title_h2">
+                                    Anna Field
+                                    <span class="ei-title__flex">
+                                        <span class="ei-title__flex">
+                                            201<span class="Desc__Zagolovok__int">3</span>
+                                        </span>
+                                        <span class="Desc__Zagolovok__coll">
+                                                Collection
+                                        </span>
+                                   </span>
+                                </h3>
+                                <h3 class="active">
+                                    Nunc non fermentum nunc. Sed ut ante <br>
+                                    eget leo tempor consequat sit amet eu orci.<br>
+                                    Donec dignissim dolor eget..
+                                </h3>
+                                <div class="Action__Menu">
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="eye"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onFavorites(6)">
+                                        <i class="star"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="aaaaa"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onCard(6)">
+                                        <i class="buy"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </transition>
+                    <transition name="fade">
+                        <li v-if="isActive === 6">
+                            <img src="img/images/large/slider-image3.jpg" alt="image07"
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                            <div class="ei-title">
+                                <h3 class="btns">
+                                    $145,99
+                                </h3>
+                                <h3 class="ei-title_h2">
+                                    Anna Field
+                                    <span class="ei-title__flex">
+                                        <span class="ei-title__flex">
+                                            201<span class="Desc__Zagolovok__int">3</span>
+                                        </span>
+                                        <span class="Desc__Zagolovok__coll">
+                                                Collection
+                                        </span>
+                                   </span>
+                                </h3>
+                                <h3 class="active">
+                                    Nunc non fermentum nunc. Sed ut ante <br>
+                                    eget leo tempor consequat sit amet eu orci.<br>
+                                    Donec dignissim dolor eget..
+                                </h3>
+                                <div class="Action__Menu">
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="eye"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onFavorites(7)">
+                                        <i class="star"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="aaaaa"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onCard(7)">
+                                        <i class="buy"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </transition>
                 </ul><!-- ei-slider-large -->
-                <ul class="ei-slider-thumbs">
-                    <li class="ei-slider-element">Current</li>
+                <ul class="ei-slider-thumbs container">
+                    <li
+                        class="ei-slider-element"
+                        v-bind:style="{ width: `${setWidth}px`, left: `${setLeft}px` }"
+                    >
+                        Current</li>
                     <li>
-                        <a href="#">
-                            <span class="active brend__br">pink shoes</span>
+                        <a href="#" @click="onActiveProduct(0)">
+                            <span
+                                    v-bind:class="{
+                                        active: isActive === 0 ? true : false,
+                                         brend__br: true
+                                    }"
+                            >
+                                pink shoes
+                            </span>
                             <p>now of $145.99</p>
                         </a>
                         <img src="img/images/thumbs/1.jpg" alt="thumb01" />
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="brend__br">anna field</span>
+                        <a href="#" @click="onActiveProduct(1)">
+                            <span
+                                    v-bind:class="{
+                                        active: isActive === 1 ? true : false,
+                                         brend__br: true
+                                    }"
+                            >anna field</span>
                             <p>limited edition</p>
                         </a>
                         <img src="img/images/thumbs/4.jpg" alt="thumb04" />
                     </li>
                     <li>
-                        <a href="#">
-                        <span class="brend__br">prada</span>
+                        <a href="#" @click="onActiveProduct(2)">
+                        <span
+                                v-bind:class="{
+                                        active: isActive === 2 ? true : false,
+                                         brend__br: true
+                                    }"
+                        >prada</span>
                             <p>summer is coming</p>
                         </a>
                         <img src="img/images/thumbs/3.jpg" alt="thumb03" /></li>
 
                     <li>
-                        <a href="#">
-                            <span class="brend__br">casa devi</span>
+                        <a href="#" @click="onActiveProduct(3)">
+                            <span
+                                    v-bind:class="{
+                                        active: isActive === 3 ? true : false,
+                                         brend__br: true
+                                    }"
+                            >casa devi</span>
                             <p>all colors available</p>
                         </a>
                         <img src="img/images/thumbs/4.jpg" alt="thumb04" />
                     </li>
 
                     <li>
-                        <a href="#">
-                            <span class="brend__br">mellow yellow</span>
+                        <a href="#" @click="onActiveProduct(4)">
+                            <span
+                                    v-bind:class="{
+                                        active: isActive === 4 ? true : false,
+                                         brend__br: true
+                                    }"
+                            >mellow yellow</span>
                             <p>free delivery</p>
                         </a>
                         <img src="img/images/thumbs/1.jpg" alt="thumb01" />
                     </li>
 
                     <li>
-                        <a href="#">
-                        <span class="brend__br">anna field</span>
+                        <a href="#" @click="onActiveProduct(5)">
+                        <span
+                                v-bind:class="{
+                                        active: isActive === 5 ? true : false,
+                                         brend__br: true
+                                    }"
+                        >anna field</span>
                         <p>limited edition</p>
                         </a>
                         <img src="img/images/thumbs/5.jpg" alt="thumb05" />
                     </li>
 
                     <li>
-                        <a href="#">
-                            <span class="brend__br">anna field</span>
+                        <a href="#" @click="onActiveProduct(6)">
+                            <span
+                                    v-bind:class="{
+                                        active: isActive === 6 ? true : false,
+                                         brend__br: true
+                                    }"
+                            >anna field</span>
                             <p>limited edition</p>
                         </a>
                         <img src="img/images/thumbs/3.jpg" alt="thumb03" />
@@ -731,7 +848,6 @@
         </button>
         {{ modalText }}
     </div>
-
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -742,17 +858,19 @@
         data: {
             focused: false,
             active: 0,
+            isActive: 0,
             search: '',
             rank: 0,
             order: [],
             favorites: [],
+            timerId: 0,
+            modalText: '',
+            modalOpen: false,
             massage: [
                 'Tовар добавлен в избранное',
                 'Tовар добавлен в картзину',
                 'Товар удален из избранное',
             ],
-            modalText: '',
-            modalOpen: false,
             menu: [
                 { text: 'Home' },
                 { text: 'products' },
@@ -786,6 +904,10 @@
             onActive(index) {
                 this.active = index;
             },
+            onActiveProduct(index) {
+                event.preventDefault();
+                this.isActive = index;
+            },
             onFavorites(number) {
                 const index = this.favorites.indexOf(number);
                 if(index === -1) {
@@ -801,7 +923,7 @@
                 this.modalOpen = true;
                 setTimeout(()=>{
                     this.modalOpen = false;
-                }, 1000)
+                }, 2000)
             },
             onCard(number) {
                 const index = this.order.indexOf(number);
@@ -811,12 +933,37 @@
                     this.modalOpen = true;
                     setTimeout(()=>{
                         this.modalOpen = false;
-                    }, 1000)
+                    }, 2000)
                 }
             },
             onCloseModal() {
                 this.modalOpen = false;
+            },
+            sliderAutoplay() {
+                var thumbs = document.querySelector('.ei-slider-thumbs');
+                var num = thumbs.querySelectorAll('li:not(.ei-slider-element)').length;
+                this.timerId = setInterval(()=> {
+                    if(this.active > num - 2) {
+                        this.active = 0;
+                        this.isActive = 0;
+                    } else {
+                        this.active += 1;
+                        this.isActive += 1;
+                    }
+                }, 2000);
+            },
+            onSliderAutoplayStop(){
+                clearInterval(this.timerId);
+            },
+            onSliderAutoplayStart() {
+                setTimeout(()=>{
+                    this.timerId = 0;
+                    this.sliderAutoplay()
+                }, 2000)
             }
+        },
+        created() {
+            this.sliderAutoplay()
         },
         computed: {
             changeRank() {
@@ -824,27 +971,33 @@
             },
             changeOrder() {
                 return this.order.length
+            },
+            setWidth() {
+                var thumbs = document.querySelector('.ei-slider-thumbs');
+                var w = thumbs.clientWidth;
+                var num = thumbs.querySelectorAll('li:not(.ei-slider-element)').length;
+                var result = (w / num) - (num / 2);
+                return result;
+            },
+            setLeft() {
+                var isActive = this.isActive;
+                var thumbs = document.querySelector('.ei-slider-thumbs');
+                var child = thumbs.querySelectorAll('li:not(.ei-slider-element)');
+                var element = child[isActive];
+                return element.offsetLeft;
+            },
+            setMarginTop() {
+                var slider = document.querySelector('.slider');
+                return slider.offsetTop;
+            }
+        },
+        watch: {
+            setLoop() {
+                console.log('test');
+                return this.loop;
             }
         }
     })
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-
-<script type="text/javascript" src="js/jquery.eislideshow.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $('#ei-slider').eislideshow({
-            animation: 'center',
-            autoplay: true,
-            slideshow_interval: 3000,
-            titlesFactor: 0
-        });
-    });
 </script>
 
 </body>
