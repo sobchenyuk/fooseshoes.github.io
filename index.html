@@ -887,9 +887,9 @@
                 { text: 'Contact us' },
             ],
             shop_window: [
-                { images: 'img/Img1.png', text: 'on sale'},
-                { images: 'img/Img2.png', text: 'special offers'},
-                { images: 'img/Img3.png', text: 'must have'},
+                { images: 'img/img1.png', text: 'on sale'},
+                { images: 'img/img2.png', text: 'special offers'},
+                { images: 'img/img3.png', text: 'must have'},
             ]
         },
         methods: {
@@ -956,10 +956,10 @@
                 clearInterval(this.timerId);
             },
             onSliderAutoplayStart() {
-                setTimeout(()=>{
-                    this.timerId = 0;
-                    this.sliderAutoplay()
-                }, 2000)
+                // setTimeout(()=>{
+                //     this.timerId = 0;
+                //     this.sliderAutoplay()
+                // }, 2000)
             }
         },
         created() {
@@ -989,12 +989,6 @@
             setMarginTop() {
                 var slider = document.querySelector('.slider');
                 return slider.offsetTop;
-            }
-        },
-        watch: {
-            setLoop() {
-                console.log('test');
-                return this.loop;
             }
         }
     })
