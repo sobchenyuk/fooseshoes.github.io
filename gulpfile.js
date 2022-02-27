@@ -1,19 +1,9 @@
-// gulp  component
-const   gulp = require('gulp');
-const   browserSync = require('browser-sync');
+const { watch, series } = require('gulp');
+const browserSync = require("browser-sync");
 
-const   watch = require('gulp-watch');
-
-// gulp settings
 const   livereliad = browserSync.create();
-const   reload = livereliad.reload;
 
-const BROWSER_SYNC = 'browser-sync';
-const WATCHER = 'watcher';
-const DEFAULT = 'default';
-
-// Static server
-gulp.task(BROWSER_SYNC, () => {
+function browsersyncServe(cb){
     livereliad.init({
         server: {
             baseDir: "./"
@@ -23,18 +13,16 @@ gulp.task(BROWSER_SYNC, () => {
         logPrefix: "landing",
         reloadDelay: 500
     });
-});
+    cb();
+}
 
-// watcher
-gulp.task( WATCHER, () => {
-    watch([`./**/*.*`, '!node_modules/**/*'], reload);
-});
+function browsersyncReload(cb){
+    livereliad.reload();
+    cb();
+}
 
+function watchTask(){
+    watch([`./**/*.*`, '!node_modules/**/*'], browsersyncReload);
+}
 
-gulp.task(
-    DEFAULT,
-    [
-        WATCHER,
-        BROWSER_SYNC,
-    ]
-);
+exports.default = series(browsersyncServe, watchTask)

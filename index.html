@@ -8,12 +8,14 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@sobchenyuk">
     <meta name="twitter:title" content="Создание сайтов с нуля">
-    <meta name="twitter:description" content="Собченюк Андрей Владимирович! Люблю делать сайты превлекательными. +380669353050">
+    <meta name="twitter:description"
+          content="Собченюк Андрей Владимирович! Люблю делать сайты превлекательными. +380669353050">
     <meta name="twitter:image" content="img/site.png">
 
 
     <meta name="description" content="Собченюк Андрей Владимирович! Люблю делать сайты превлекательными. +380669353050">
-    <meta name="keywords" content="создание сайтов, создавать сайт, создание партнерского сайта, сайт разработка, создание сайта +с нуля">
+    <meta name="keywords"
+          content="создание сайтов, создавать сайт, создание партнерского сайта, сайт разработка, создание сайта +с нуля">
     <meta name="robots" content="index, follow">
     <meta name="generator" content="github.io"/>
 
@@ -26,7 +28,8 @@
     <meta property="og:url" content="http://portfolio.optimist.biz.ua/fooseshoes.github.io"/>
     <meta property="og:image" content="img/site.png"/>
     <meta property="og:site_name" content="Создание сайтов с нуля"/>
-    <meta property="og:description" content="Собченюк Андрей Владимирович! Люблю делать сайты превлекательными. +380669353050"/>
+    <meta property="og:description"
+          content="Собченюк Андрей Владимирович! Люблю делать сайты превлекательными. +380669353050"/>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -60,16 +63,17 @@
 
                     <form class="navbar-form navbar-left form__1"
                           v-bind:class="{ focus: focused }"
+                          v-on:submit.prevent
                           method="post"
                           action="#"
                           role="search">
                         <label for="search"></label>
-                            <input type="text"
-                                   id="search"
-                                   class="form-control"
-                                   @focus="onFocus"
-                                   @blur="onBlur"
-                                   v-model="search">
+                        <input type="text"
+                               id="search"
+                               class="form-control"
+                               @focus="onFocus"
+                               @blur="onBlur"
+                               v-model="search">
                         <input type="submit" value="">
                     </form>
 
@@ -128,16 +132,15 @@
     </div>
 
 
-
-<div class="slider"
-     @mouseover="onSliderAutoplayStop"
-     @mouseleave="onSliderAutoplayStart"
->
+    <div ref="slider" class="slider"
+         @mouseover="onSliderAutoplayStop"
+         @mouseleave="onSliderAutoplayStart"
+    >
         <div class="wrapper">
 
             <div
-                 id="ei-slider"
-                 class="ei-slider"
+                    id="ei-slider"
+                    class="ei-slider"
             >
                 <ul class="ei-slider-large">
                     <transition name="fade">
@@ -145,12 +148,12 @@
                             <img src="img/images/large/slider-image1.jpg" alt="image06"
                                  v-bind:style="{  marginTop: `-${setMarginTop}px` }"/>
                             <div class="ei-title">
-                                    <h3 class="btns">
-                                        $145,99
-                                    </h3>
-                                    <h3 class="ei-title_h2">
-                                            Pink Shoes
-                                        <span class="ei-title__flex">
+                                <h3 class="btns">
+                                    $145,99
+                                </h3>
+                                <h3 class="ei-title_h2">
+                                    Pink Shoes
+                                    <span class="ei-title__flex">
                                            <span class="ei-title__flex">
                                                 201<span class="Desc__Zagolovok__int">3</span>
                                             </span>
@@ -158,33 +161,33 @@
                                                 Collection
                                             </span>
                                         </span>
-                                    </h3>
-                                        <h3 class="active">
-                                            Nunc non fermentum nunc. Sed ut ante <br>
-                                            eget leo tempor consequat sit amet eu orci.<br>
-                                            Donec dignissim dolor eget..
-                                        </h3>
-                                    <div class="Action__Menu">
-                                                <a href="#!" class="Action__Menu__link">
-                                                    <i class="eye"></i>
-                                                </a>
-                                                <a href="#!" class="Action__Menu__link" @click="onFavorites(1)">
-                                                    <i class="star"></i>
-                                                </a>
-                                                <a href="#!" class="Action__Menu__link">
-                                                    <i class="aaaaa"></i>
-                                                </a>
-                                                <a href="#!" class="Action__Menu__link" @click="onCard(1)">
-                                                    <i class="buy"></i>
-                                                </a>
-                                    </div>
+                                </h3>
+                                <h3 class="active">
+                                    Nunc non fermentum nunc. Sed ut ante <br>
+                                    eget leo tempor consequat sit amet eu orci.<br>
+                                    Donec dignissim dolor eget..
+                                </h3>
+                                <div class="Action__Menu">
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="eye"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onFavorites(1)">
+                                        <i class="star"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link">
+                                        <i class="aaaaa"></i>
+                                    </a>
+                                    <a href="#!" class="Action__Menu__link" @click="onCard(1)">
+                                        <i class="buy"></i>
+                                    </a>
+                                </div>
                             </div>
                         </li>
                     </transition>
                     <transition name="fade">
                         <li v-if="isActive === 1">
                             <img src="img/images/large/slider-image4.jpg" alt="image01"
-                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }"/>
                             <div class="ei-title">
                                 <h3 class="btns">
                                     $145,99
@@ -225,7 +228,7 @@
                     <transition name="fade">
                         <li v-if="isActive === 2">
                             <img src="img/images/large/slider-image3.jpg" alt="image02"
-                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }"/>
                             <div class="ei-title">
                                 <h3 class="btns">
                                     $145,99
@@ -266,7 +269,7 @@
                     <transition name="fade">
                         <li v-if="isActive === 3">
                             <img src="img/images/large/slider-image4.jpg" alt="image03"
-                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }"/>
                             <div class="ei-title">
                                 <h3 class="btns">
                                     $145,99
@@ -307,7 +310,7 @@
                     <transition name="fade">
                         <li v-if="isActive === 4">
                             <img src="img/images/large/slider-image1.jpg" alt="image04"
-                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }"/>
                             <div class="ei-title">
                                 <h3 class="btns">
                                     $145,99
@@ -348,7 +351,7 @@
                     <transition name="fade">
                         <li v-if="isActive === 5">
                             <img src="img/images/large/slider-image5.jpg" alt="image05"
-                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }"/>
                             <div class="ei-title">
                                 <h3 class="btns">
                                     $145,99
@@ -389,7 +392,7 @@
                     <transition name="fade">
                         <li v-if="isActive === 6">
                             <img src="img/images/large/slider-image3.jpg" alt="image07"
-                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }" />
+                                 v-bind:style="{  marginTop: `-${setMarginTop}px` }"/>
                             <div class="ei-title">
                                 <h3 class="btns">
                                     $145,99
@@ -428,12 +431,14 @@
                         </li>
                     </transition>
                 </ul><!-- ei-slider-large -->
-                <ul class="ei-slider-thumbs container">
+                <ul ref="sliderThumbs" class="ei-slider-thumbs container">
                     <li
-                        class="ei-slider-element"
-                        v-bind:style="{ width: `${setWidth}px`, left: `${setLeft}px` }"
+                            ref="sliderElement"
+                            class="ei-slider-element"
+                            v-bind:style="{ width: `${setWidth}px`, left: `${setLeft}px` }"
                     >
-                        Current</li>
+                        Current
+                    </li>
                     <li>
                         <a href="#" @click="onActiveProduct(0)">
                             <span
@@ -446,7 +451,7 @@
                             </span>
                             <p>now of $145.99</p>
                         </a>
-                        <img src="img/images/thumbs/1.jpg" alt="thumb01" />
+                        <img src="img/images/thumbs/1.jpg" alt="thumb01"/>
                     </li>
                     <li>
                         <a href="#" @click="onActiveProduct(1)">
@@ -458,7 +463,7 @@
                             >anna field</span>
                             <p>limited edition</p>
                         </a>
-                        <img src="img/images/thumbs/4.jpg" alt="thumb04" />
+                        <img src="img/images/thumbs/4.jpg" alt="thumb04"/>
                     </li>
                     <li>
                         <a href="#" @click="onActiveProduct(2)">
@@ -470,7 +475,7 @@
                         >prada</span>
                             <p>summer is coming</p>
                         </a>
-                        <img src="img/images/thumbs/3.jpg" alt="thumb03" /></li>
+                        <img src="img/images/thumbs/3.jpg" alt="thumb03"/></li>
 
                     <li>
                         <a href="#" @click="onActiveProduct(3)">
@@ -482,7 +487,7 @@
                             >casa devi</span>
                             <p>all colors available</p>
                         </a>
-                        <img src="img/images/thumbs/4.jpg" alt="thumb04" />
+                        <img src="img/images/thumbs/4.jpg" alt="thumb04"/>
                     </li>
 
                     <li>
@@ -495,7 +500,7 @@
                             >mellow yellow</span>
                             <p>free delivery</p>
                         </a>
-                        <img src="img/images/thumbs/1.jpg" alt="thumb01" />
+                        <img src="img/images/thumbs/1.jpg" alt="thumb01"/>
                     </li>
 
                     <li>
@@ -506,9 +511,9 @@
                                          brend__br: true
                                     }"
                         >anna field</span>
-                        <p>limited edition</p>
+                            <p>limited edition</p>
                         </a>
-                        <img src="img/images/thumbs/5.jpg" alt="thumb05" />
+                        <img src="img/images/thumbs/5.jpg" alt="thumb05"/>
                     </li>
 
                     <li>
@@ -521,13 +526,13 @@
                             >anna field</span>
                             <p>limited edition</p>
                         </a>
-                        <img src="img/images/thumbs/3.jpg" alt="thumb03" />
+                        <img src="img/images/thumbs/3.jpg" alt="thumb03"/>
                     </li>
                 </ul><!-- ei-slider-thumbs -->
             </div><!-- ei-slider -->
 
         </div>
-</div>
+    </div>
 
     <div class="SPECIALS">
         <div class="container">
@@ -620,7 +625,7 @@
                                     <li class="Action__Menu__item">
                                         <a href="#!"
                                            class="Action__Menu__link"
-                                            @click="onFavorites(10)">
+                                           @click="onFavorites(10)">
                                             <i class="star"></i>
                                         </a>
                                     </li>
@@ -777,7 +782,7 @@
 
     <div class="footer__duttom1">
         <div class="container">
-            <form class="navbar-form navbar-left footer__submit" action="#!" method="post" role="search">
+            <form v-on:submit.prevent class="navbar-form navbar-left footer__submit" action="#!" method="post" role="search">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Enter email for newsletter">
                     <div>
@@ -822,7 +827,7 @@
             <div class="row">
 
                 <div class="col-lg-3">
-                    <p class="Copyright">Copyright © Fooseshoes <script type="text/javascript">var mdate = new Date(); document.write(mdate.getFullYear());</script>.</p>
+                    <p class="Copyright">Copyright © Fooseshoes {{mdate}} </p>
                     <p class="footer__Designed"> Designed by <a href="https://vk.com/sobcheniuk" target="_blank">Sobchenyuk
                         Andrey.</a></p>
                 </div>
@@ -850,54 +855,59 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://unpkg.com/vue@3"></script>
 
 <script>
-    var app = new Vue({
-        el: '#app',
-        data: {
-            focused: false,
-            active: 0,
-            isActive: 0,
-            search: '',
-            rank: 0,
-            order: [],
-            favorites: [],
-            timerId: 0,
-            modalText: '',
-            modalOpen: false,
-            massage: [
-                'Tовар добавлен в избранное',
-                'Tовар добавлен в картзину',
-                'Товар удален из избранное',
-            ],
-            menu: [
-                { text: 'Home' },
-                { text: 'products' },
-                { text: 'about' },
-                { text: 'pages' },
-                { text: 'blog' },
-                { text: 'Contact' }
-            ],
-            menu_footer: [
-                { text: 'Home' },
-                { text: 'Support' },
-                { text: 'Terms and Conditions' },
-                { text: 'Faqs' },
-                { text: 'Contact us' },
-            ],
-            shop_window: [
-                { images: 'img/img1.png', text: 'on sale'},
-                { images: 'img/img2.png', text: 'special offers'},
-                { images: 'img/img3.png', text: 'must have'},
-            ]
+    Vue.createApp({
+        data() {
+            return {
+                focused: false,
+                active: 0,
+                isActive: 0,
+                search: '',
+                rank: 0,
+                order: [],
+                favorites: [],
+                timerId: 0,
+                modalText: '',
+                modalOpen: false,
+                mdate: new Date().getFullYear(),
+                massage: [
+                    'Tовар добавлен в избранное',
+                    'Tовар добавлен в картзину',
+                    'Товар удален из избранное',
+                ],
+                menu: [
+                    {text: 'Home'},
+                    {text: 'products'},
+                    {text: 'about'},
+                    {text: 'pages'},
+                    {text: 'blog'},
+                    {text: 'Contact'}
+                ],
+                menu_footer: [
+                    {text: 'Home'},
+                    {text: 'Support'},
+                    {text: 'Terms and Conditions'},
+                    {text: 'Faqs'},
+                    {text: 'Contact us'},
+                ],
+                shop_window: [
+                    {images: 'img/img1.png', text: 'on sale'},
+                    {images: 'img/img2.png', text: 'special offers'},
+                    {images: 'img/img3.png', text: 'must have'},
+                ],
+                sliderThumbs: null,
+                sliderElement: null,
+                slider: null,
+            }
         },
         methods: {
             onFocus() {
                 this.focused = true
             },
             onBlur() {
-                if(!this.search.length) {
+                if (!this.search.length) {
                     this.focused = false
                 }
             },
@@ -910,7 +920,7 @@
             },
             onFavorites(number) {
                 const index = this.favorites.indexOf(number);
-                if(index === -1) {
+                if (index === -1) {
                     this.favorites.push(number);
                     this.modalText = this.massage[0];
                 } else {
@@ -921,17 +931,17 @@
                     this.modalText = this.massage[2];
                 }
                 this.modalOpen = true;
-                setTimeout(()=>{
+                setTimeout(() => {
                     this.modalOpen = false;
                 }, 2000)
             },
             onCard(number) {
                 const index = this.order.indexOf(number);
-                if(index === -1) {
+                if (index === -1) {
                     this.order.push(number);
                     this.modalText = this.massage[1];
                     this.modalOpen = true;
-                    setTimeout(()=>{
+                    setTimeout(() => {
                         this.modalOpen = false;
                     }, 2000)
                 }
@@ -942,8 +952,8 @@
             sliderAutoplay() {
                 var thumbs = document.querySelector('.ei-slider-thumbs');
                 var num = thumbs.querySelectorAll('li:not(.ei-slider-element)').length;
-                this.timerId = setInterval(()=> {
-                    if(this.active > num - 2) {
+                this.timerId = setInterval(() => {
+                    if (this.active > num - 2) {
                         this.active = 0;
                         this.isActive = 0;
                     } else {
@@ -952,17 +962,20 @@
                     }
                 }, 2000);
             },
-            onSliderAutoplayStop(){
+            onSliderAutoplayStop() {
                 clearInterval(this.timerId);
             },
             onSliderAutoplayStart() {
-                // setTimeout(()=>{
-                //     this.timerId = 0;
-                //     this.sliderAutoplay()
-                // }, 2000)
+                setTimeout(() => {
+                    this.timerId = 0;
+                    this.sliderAutoplay()
+                }, 2000)
             }
         },
-        created() {
+        mounted() {
+            this.sliderThumbs = this.$refs.sliderThumbs
+            this.sliderElement = this.$refs.sliderElement
+            this.slider = this.$refs.slider
             this.sliderAutoplay()
         },
         computed: {
@@ -973,25 +986,28 @@
                 return this.order.length
             },
             setWidth() {
-                var thumbs = document.querySelector('.ei-slider-thumbs');
-                var w = thumbs.clientWidth;
-                var num = thumbs.querySelectorAll('li:not(.ei-slider-element)').length;
-                var result = (w / num) - (num / 2);
-                return result;
+                if (this.sliderThumbs) {
+                    var w = this.sliderThumbs.clientWidth;
+                    var num = this.sliderThumbs.querySelectorAll('li:not(.ei-slider-element)').length;
+                    var result = (w / num) - (num / 2);
+                    return result;
+                }
             },
             setLeft() {
-                var isActive = this.isActive;
-                var thumbs = document.querySelector('.ei-slider-thumbs');
-                var child = thumbs.querySelectorAll('li:not(.ei-slider-element)');
-                var element = child[isActive];
-                return element.offsetLeft;
+                if (this.sliderThumbs) {
+                    var isActive = this.isActive;
+                    var child = this.sliderThumbs.querySelectorAll('li:not(.ei-slider-element)');
+                    var element = child[isActive];
+                    return element.offsetLeft;
+                }
             },
             setMarginTop() {
-                var slider = document.querySelector('.slider');
-                return slider.offsetTop;
+                if (this.slider) {
+                    return this.slider.offsetTop;
+                }
             }
         }
-    })
+    }).mount('#app')
 </script>
 
 </body>
